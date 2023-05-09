@@ -1,0 +1,116 @@
+.fullContainer {
+  background-image: radial-gradient(#d5f3ff 0%, #51b4e8 100%);
+  height: 100vh;
+  background-image: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 19%;
+  font-size: 25px;
+}
+.boxcontainer {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+h2 {
+  color: white;
+  margin-top: 20px;
+}
+.weatherBox {
+  padding: 10px;
+  height: 250px;
+  width: 400px;
+  color: #0e68c9;
+  border: none;
+  border-radius: 30px 100px 30px 30px;
+  box-shadow: 0px 5px 5px 0px rgb(164, 162, 162);
+  background-image: linear-gradient(#e5f2ff 0%, #d5f3ff 97.4%);
+  display: flex;
+  gap: 10%;
+}
+.weatherBox_RightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.weatherBox_LeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.temperature {
+  font-family: "Lato", sans-serif, "Oswald";
+  font-size: 95px;
+  font-weight: 300;
+}
+.humidity_speed {
+  font-size: 13px;
+}
+.country {
+  font-size: 23px;
+  font-weight: bold;
+}
+img {
+  width: 250px;
+}
+.description {
+  font-size: 17px;
+  text-align: center;
+}
+.btnChange {
+  width: 178px;
+  height: 38px;
+  background-color: #38a0d8;
+  color: white;
+  font-size: 17px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 5px 0px rgb(135, 133, 133);
+  border: none;
+  transition: 0.5s;
+}
+.btnChange:hover {
+  background-color: #2e8cbe;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 5px 0px rgb(94, 93, 93);
+}
+.btnChange:active {
+  background-color: #38a0d8;
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  .nav {
+    font-size: 15px;
+  }
+  .weatherBox {
+    height: 150px;
+    width: 250px;
+  }
+  .temperature {
+    font-size: 55px;
+  }
+  .humidity_speed {
+    font-size: 10px;
+  }
+  .country {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  img {
+    width: 150px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .btnChange {
+    width: 128px;
+    height: 28px;
+  }
+}
