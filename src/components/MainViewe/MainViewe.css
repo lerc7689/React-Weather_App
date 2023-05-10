@@ -33,7 +33,7 @@ h2 {
   box-shadow: 0px 5px 5px 0px rgb(164, 162, 162);
   background-image: linear-gradient(#e5f2ff 0%, #d5f3ff 97.4%);
   display: flex;
-  gap: 10%;
+  gap: 15%;
 }
 .weatherBox_LeftSide {
   display: flex;
@@ -43,7 +43,8 @@ h2 {
 .weatherBox_RightSide {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
+  align-content: center;
 }
 .temperature {
   font-family: "Lato", sans-serif, "Oswald";
@@ -58,8 +59,10 @@ h2 {
   font-weight: bold;
 }
 img {
-  width: 200px;
-  height: 250px;
+  width: 240px;
+  position: absolute;
+  z-index: 1;
+  top: 140px;
 }
 .description {
   font-size: 17px;
