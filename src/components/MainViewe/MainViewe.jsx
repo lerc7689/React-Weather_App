@@ -5,7 +5,7 @@ import getWeather from "../../services/GetWeather";
 import { useState, useEffect } from "react";
 import { convertTemp } from "../../utils/convertTemp";
 import { getIconById } from "../../utils/getIconById";
-import Loading from "../Loading/Loading";
+import Loading from "../Loading2/Loading";
 
 const MainViewe = () => {
   const [Coords, setCoords] = useState(null);
