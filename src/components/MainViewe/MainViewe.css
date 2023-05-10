@@ -35,12 +35,12 @@ h2 {
   display: flex;
   gap: 10%;
 }
-.weatherBox_RightSide {
+.weatherBox_LeftSide {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.weatherBox_LeftSide {
+.weatherBox_RightSide {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +58,8 @@ h2 {
   font-weight: bold;
 }
 img {
-  width: 250px;
+  width: 200px;
+  height: 250px;
 }
 .description {
   font-size: 17px;

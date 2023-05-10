@@ -35,7 +35,7 @@ const MainViewe = () => {
 
           <div className="boxcontainer">
             <div className="weatherBox">
-              <div className="weatherBox_RightSide">
+              <div className="weatherBox_LeftSide">
                 <p className="temperature">
                   {ChangeTemp ? Temperature + "°" : Temperature + "°"}
                 </p>
@@ -47,7 +47,7 @@ const MainViewe = () => {
                   {Coords?.name}, {Coords?.sys.country}{" "}
                 </p>
               </div>
-              <div className="weatherBox_LeftSide">
+              <div className="weatherBox_RightSide">
                 <img src={getIconById(Coords?.weather[0].icon)}></img>
                 <p className="description">{Coords?.weather[0].description}</p>
               </div>
