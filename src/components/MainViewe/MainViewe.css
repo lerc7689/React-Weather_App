@@ -43,7 +43,7 @@ h2 {
 .weatherBox_RightSide {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
   align-content: center;
 }
 .temperature {
@@ -60,9 +60,9 @@ h2 {
 }
 img {
   width: 240px;
-  position: absolute;
+  /* position: absolute;
   z-index: 1;
-  top: 140px;
+  top: 140px; */
 }
 .description {
   font-size: 17px;
