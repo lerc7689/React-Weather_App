@@ -33,7 +33,7 @@ h2 {
   box-shadow: 0px 5px 5px 0px rgb(164, 162, 162);
   background-image: linear-gradient(#e5f2ff 0%, #d5f3ff 97.4%);
   display: flex;
-  gap: 15%;
+  gap: 10%;
 }
 .weatherBox_LeftSide {
   display: flex;
@@ -60,9 +60,6 @@ h2 {
 }
 img {
   width: 240px;
-  /* position: absolute;
-  z-index: 1;
-  top: 140px; */
 }
 .description {
   font-size: 17px;
