@@ -67,7 +67,7 @@ const SearchCountry = () => {
                 value={Country}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                placeholder="Search a country"
+                placeholder="click here to search a country"
               />
             </div>
             <WeatherCard
