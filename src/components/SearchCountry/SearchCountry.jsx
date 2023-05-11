@@ -44,6 +44,7 @@ const SearchCountry = () => {
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       CountryWeather();
+      setCountry("");
       event.preventDefault();
     }
   };
