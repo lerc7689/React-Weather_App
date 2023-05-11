@@ -6,6 +6,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .nav {
+  padding-top: 3%;
   display: flex;
   justify-content: center;
   gap: 19%;
@@ -22,6 +23,13 @@
 h2 {
   color: white;
   margin-top: 20px;
+}
+.searchForm input {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
 }
 .weatherBox {
   padding: 10px;
@@ -59,7 +67,7 @@ h2 {
   font-weight: bold;
 }
 img {
-  width: 240px;
+  width: 230px;
 }
 .description {
   font-size: 17px;

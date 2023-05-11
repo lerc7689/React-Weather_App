@@ -1,9 +1,9 @@
-import MainViewe from "./components/MainViewe/MainViewe";
+import SearchCountry from "./components/SearchCountry/SearchCountry";
 
 function App() {
   return (
     <>
-      <MainViewe />
+      <SearchCountry />
     </>
   );
 }
