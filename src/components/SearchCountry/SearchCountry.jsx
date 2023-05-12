@@ -5,7 +5,7 @@ import "../../App.css";
 import "./SearchCountry.css";
 import { convertTemp } from "../../utils/convertTemp";
 import getCountryWeather from "../../services/GetCountryWeather";
-import WeatherCard from "../WeatherCard/weatherCard";
+import WeatherCard from "../WeatherCard/WeatherCard";
 import Loading from "../Loading/Loading";
 
 const SearchCountry = () => {
