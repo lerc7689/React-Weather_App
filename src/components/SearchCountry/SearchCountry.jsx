@@ -5,7 +5,7 @@ import "../../App.css";
 import "./SearchCountry.css";
 import { convertTemp } from "../../utils/convertTemp";
 import getCountryWeather from "../../services/GetCountryWeather";
-import WeatherCard from "../weatherCard/weatherCard";
+import WeatherCard from "../WeatherCard/weatherCard";
 import Loading from "../Loading/Loading";
 
 const SearchCountry = () => {
@@ -52,7 +52,8 @@ const SearchCountry = () => {
   useEffect(() => {
     loadWeather();
   }, []);
-
+  // let imagen = "../../assets/img/sunny.jpg";
+  // style={{ backgroundImage: `url("${imagen}")` }}
   return (
     <>
       {CountryData ? (
@@ -68,7 +69,7 @@ const SearchCountry = () => {
                 value={Country}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                placeholder="click here to search a country"
+                placeholder="click here to search for a country"
               />
             </div>
             <WeatherCard

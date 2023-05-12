@@ -1,6 +1,6 @@
 import { getIconById } from "../../utils/getIconById";
 
-const WeatherCard = ({ ChangeTemp, Temperature, countryData }) => {
+const weatherCard = ({ ChangeTemp, Temperature, countryData }) => {
   return (
     <>
       {countryData && (
@@ -27,4 +27,4 @@ const WeatherCard = ({ ChangeTemp, Temperature, countryData }) => {
   );
 };
 
-export default WeatherCard;
+export default weatherCard;
