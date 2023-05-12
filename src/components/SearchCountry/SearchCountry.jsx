@@ -87,12 +87,18 @@ const SearchCountry = () => {
               Temperature={Temperature}
               countryData={CountryData}
             />
-            <button
-              className="btnChange"
-              onClick={() => setChangeTemp(!ChangeTemp)}
-            >
-              Change to {ChangeTemp ? " F°" : " C°"}
-            </button>
+            <div className="buttons">
+              <button
+                className="btnChange"
+                onClick={() => setChangeTemp(!ChangeTemp)}
+              >
+                Change to {ChangeTemp ? " F°" : " C°"}
+              </button>
+
+              <button className="btnChange btnMyLocation" onClick={loadWeather}>
+                My <i className="fa-solid fa-location-dot"></i>
+              </button>
+            </div>
           </div>
         </div>
       ) : (
