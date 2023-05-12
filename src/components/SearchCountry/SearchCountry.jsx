@@ -63,6 +63,7 @@ const SearchCountry = () => {
     backgroundPosition: "center",
     backgroundSize: "cover",
   };
+
   return (
     <>
       {CountryData ? (

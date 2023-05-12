@@ -6,7 +6,7 @@ import scatteredClouds from "../assets/img/scatteredClouds.jpg";
 import brokenClouds from "../assets/img/brokenClouds.jpg";
 import showerRain from "../assets/img/showerRain.jpg";
 import rainDay from "../assets/img/rainDay.jpg";
-//import rainNight from "../assets/img/rainNight.jpg";
+import rainNight from "../assets/img/rainNight.jpg";
 import thunderstorm from "../assets/img/thunderstorm.jpg";
 import snow from "../assets/img/snow.jpg";
 import mist from "../assets/img/mist.jpg";
