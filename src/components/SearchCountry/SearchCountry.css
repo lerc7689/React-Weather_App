@@ -1,7 +1,8 @@
 .fullContainer {
+  /* Este es el fondo azul, no lo borrare para dejarlo de ejemplo
   background-image: radial-gradient(#d5f3ff 0%, #51b4e8 100%);
   height: 100vh;
-  background-image: cover;
+  background-image: cover; */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }

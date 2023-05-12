@@ -7,6 +7,7 @@ import { convertTemp } from "../../utils/convertTemp";
 import getCountryWeather from "../../services/GetCountryWeather";
 import WeatherCard from "../WeatherCard/WeatherCard";
 import Loading from "../Loading/Loading";
+import getBackgroundById from "../../utils/getBackgroundById";
 
 const SearchCountry = () => {
   const [ChangeTemp, setChangeTemp] = useState(false);
@@ -48,16 +49,24 @@ const SearchCountry = () => {
       event.preventDefault();
     }
   };
-  //
+
   useEffect(() => {
     loadWeather();
   }, []);
-  // let imagen = "../../assets/img/sunny.jpg";
-  // style={{ backgroundImage: `url("${imagen}")` }}
+
+  let style = {
+    backgroundImage: `url("${getBackgroundById(
+      CountryData?.weather[0].icon
+    )}")`,
+
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  };
   return (
     <>
       {CountryData ? (
-        <div className="fullContainer">
+        <div className="fullContainer" style={style}>
           <div className="nav">
             <h2>Weather app</h2>
           </div>
