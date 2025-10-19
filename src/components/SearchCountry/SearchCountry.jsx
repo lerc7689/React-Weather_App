@@ -69,7 +69,7 @@ const SearchCountry = () => {
       {CountryData ? (
         <div className="fullContainer" style={style}>
           <div className="nav">
-            <h2>Weather app</h2>
+            {/* <h2>Weather app</h2> */}
           </div>
           <div className="boxcontainer">
             <div className="searchForm">
@@ -79,7 +79,7 @@ const SearchCountry = () => {
                 value={Country}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
-                placeholder="click here to search for a country"
+                placeholder="Click here to search by city or country"
               />
             </div>
             <WeatherCard

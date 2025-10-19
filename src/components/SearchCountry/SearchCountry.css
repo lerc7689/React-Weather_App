@@ -21,35 +21,44 @@
   align-items: center;
   gap: 50px;
 }
-h2 {
-  color: white;
+/* h2 {
+  color: #0e68c9;
   margin-top: 20px;
-}
+} */
+
 .searchForm input {
-  width: 250px;
+  width: 390px;
   height: 30px;
   border-radius: 10px;
-  text-align: center;
+  padding-left: 1rem;
   border: none;
   background-color: whitesmoke;
-  font-weight: bold;
-  box-shadow: 0px 3px 5px 0px rgb(135, 133, 133);
+  /* font-weight: bold; */
 }
 .searchForm > input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 .weatherBox {
   padding: 10px;
-  height: 250px;
-  width: 400px;
   color: #0e68c9;
   border: none;
   border-radius: 30px 100px 30px 30px;
-  box-shadow: 0px 5px 5px 0px rgb(164, 162, 162);
   background-image: linear-gradient(#e5f2ff 0%, #d5f3ff 97.4%);
   display: flex;
   gap: 10%;
 }
+
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0); /* Posición inicial y final */
+  }
+  50% {
+    transform: translateY(-20px); /* Posición en la mitad de la animación */
+  }
+}
+
+
 .weatherBox_LeftSide {
   display: flex;
   flex-direction: column;
@@ -76,6 +85,7 @@ h2 {
 img {
   width: 230px;
   height: 200px;
+   animation: floatAnimation 4s ease-in-out infinite; /* 4 segundos de duración, aceleración suave, infinito */
 }
 .description {
   font-size: 17px;
@@ -92,7 +102,6 @@ img {
   color: white;
   font-size: 17px;
   border-radius: 12px;
-  box-shadow: 0px 3px 5px 0px rgb(135, 133, 133);
   border: none;
   transition: 0.5s;
 }
@@ -101,7 +110,6 @@ img {
   cursor: pointer;
   transition: 0.5s;
   transform: translateY(-5px);
-  box-shadow: 0px 3px 5px 0px rgb(94, 93, 93);
 }
 .btnChange:active {
   background-color: #38a0d8;
@@ -112,10 +120,6 @@ img {
 @media (min-width: 320px) and (max-width: 500px) {
   .nav {
     font-size: 15px;
-  }
-  .weatherBox {
-    height: 150px;
-    width: 250px;
   }
   .temperature {
     font-size: 55px;
@@ -136,5 +140,8 @@ img {
   .btnChange {
     width: 128px;
     height: 28px;
+  }
+  .searchForm input {
+    width: 210px;
   }
 }
