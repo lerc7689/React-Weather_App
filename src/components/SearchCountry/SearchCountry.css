@@ -137,6 +137,9 @@ img {
   .description {
     font-size: 12px;
   }
+  .searchForm input {
+    font-size:12px;
+  }
   .btnChange {
     width: 128px;
     height: 28px;
