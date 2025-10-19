@@ -137,14 +137,13 @@ img {
   .description {
     font-size: 10px;
   }
-  .searchForm input {
-    font-size:12px;
-  }
   .btnChange {
     width: 128px;
     height: 28px;
+    font-size: 12px;
   }
   .searchForm input {
     width: 210px;
+    font-size: 12px;  
   }
 }
